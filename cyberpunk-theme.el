@@ -113,7 +113,7 @@
    `(buffers-tab ((,class (:background ,cyberpunk-black-2 :foreground ,cyberpunk-white-2))))
 
    ;;; basic coloring
-   `(default ((,class (:foreground ,cyberpunk-gray :background ,cyberpunk-black))))
+   `(default ((,class (:foreground ,cyberpunk-white :background ,cyberpunk-black))))
    `(cursor ((,class (:background ,cyberpunk-fg))))
    `(escape-glyph-face ((,class (:foreground ,cyberpunk-red))))
    `(fringe ((,class (:foreground ,cyberpunk-fg :background ,cyberpunk-bg))))
