@@ -114,7 +114,7 @@
    `(default ((,class (:foreground ,cyberpunk-gray :background ,cyberpunk-black))))
    `(cursor ((,class (:background ,cyberpunk-fg))))
    `(escape-glyph-face ((,class (:foreground ,cyberpunk-red))))
-   ;; `(fringe ((,class (:foreground ,cyberpunk-fg :background ,cyberpunk-bg+1))))
+   `(fringe ((,class (:foreground ,cyberpunk-fg :background ,cyberpunk-bg))))
    `(header-line ((,class (:foreground ,cyberpunk-yellow
                                        :background ,cyberpunk-bg-1
                                        :box (:line-width -1 :style released-button)))))
@@ -147,7 +147,7 @@
    ;; faces used by isearch
    `(isearch ((,class (:foreground ,cyberpunk-black :background ,cyberpunk-pink-1))))
    `(isearch-fail ((,class (:background ,cyberpunk-red-1))))
-   
+
    `(lazy-highlight ((,class (:foreground ,cyberpunk-black :background ,cyberpunk-yellow))))
    `(query-replace ((,class (:background ,cyberpunk-gray-5))))
    `(Highline-face ((,class (:background ,cyberpunk-green-1))))
@@ -160,14 +160,14 @@
    `(menu ((,class (:foreground ,cyberpunk-fg :background ,cyberpunk-bg))))
    `(minibuffer-prompt ((,class (:foreground ,cyberpunk-green+1 :background ,cyberpunk-black))))
    `(mode-line
-     ((,class (:foreground ,cyberpunk-blue-5
-                           :background ,cyberpunk-gray-5
+     ((,class (:foreground ,cyberpunk-gray-5
+                           :background ,cyberpunk-blue-5
                            :box (:line-width -1 :color ,cyberpunk-blue-5)))))
-   ;; `(mode-line-buffer-id ((,class (:foreground ,cyberpunk-yellow :weight bold))))
+   `(mode-line-buffer-id ((,class (:foreground ,cyberpunk-gray-5 :weight bold))))
    `(mode-line-inactive
      ((,class (:foreground ,cyberpunk-gray-7
                            :background ,cyberpunk-gray-6
-                           :box (:line-width -1 :color ,cyberpunk-blue-5)))))
+                           :box (:line-width -1 :color ,cyberpunk-gray-5)))))
    `(region ((,class (:background ,cyberpunk-red-5))))
    `(secondary-selection ((,class (:background ,cyberpunk-bg+2))))
    `(trailing-whitespace ((,class (:background ,cyberpunk-red))))
@@ -176,7 +176,7 @@
    ;;; font lock
    `(font-lock-builtin-face ((,class (:foreground ,cyberpunk-orange-2))))
    `(font-lock-comment-face ((,class (:foreground ,cyberpunk-gray-2 :italic t))))
-   ;; `(font-lock-comment-delimiter-face ((,class (:foreground ,cyberpunk-green)))) 
+   ;; `(font-lock-comment-delimiter-face ((,class (:foreground ,cyberpunk-green))))
    `(font-lock-constant-face ((,class (:foreground ,cyberpunk-blue-5))))
    ;; `(font-lock-doc-face ((,class (:foreground ,cyberpunk-green+1))))
    `(font-lock-doc-string-face ((,class (:foreground ,cyberpunk-orange-1))))
@@ -196,7 +196,7 @@
    `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
 
    `(gui-element ((,class (:background ,cyberpunk-gray-5 :foreground ,cyberpunk-blue-6))))
-   
+
 
 
    ;;; newsticker
@@ -443,6 +443,9 @@
    ;; linum-mode
    `(linum ((,class (:foreground ,cyberpunk-green+2 :background ,cyberpunk-bg))))
 
+   ;;linum-relative
+   `(linum-relative-current-face ((,class (:inherit linum :foreground ,cyberpunk-white :weight bold))))
+
    ;; magit
    `(magit-section-title ((,class (:foreground ,cyberpunk-pink-1))))
    `(magit-branch ((,class (:foreground ,cyberpunk-yellow-5))))
@@ -543,10 +546,10 @@
    `(org-column ((,class (:background ,cyberpunk-yellow-3 :foreground ,cyberpunk-black))))
    `(org-column-title ((,class (:background ,cyberpunk-bg-1 :underline t :weight bold))))
    `(org-block ((,class (:foreground ,cyberpunk-fg :background ,cyberpunk-bg-05))))
-   `(org-block-begin-line 
+   `(org-block-begin-line
      ((,class (:foreground "#008ED1" :background ,cyberpunk-bg-1))))
    `(org-block-background ((,class (:background ,cyberpunk-bg-05))))
-   `(org-block-end-line 
+   `(org-block-end-line
      ((,class (:foreground "#008ED1" :background ,cyberpunk-bg-1))))
 
    ;; `(org-deadline-announce ((,class (:foreground ,cyberpunk-red-1))))
